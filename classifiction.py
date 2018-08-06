@@ -13,9 +13,9 @@ from sklearn.cluster import KMeans
 target_var="y"
 var_imp_cutoff=0.05
 # STEP:1
-
+path=file location
 # Loard raw data into Python workspace.
-master_data=pd.read_csv("C:\\Users\\RajKalla\\prudent\\pass\\ppa\\classification\\inbound\\creditcard.csv")
+master_data=pd.read_csv(path)
 
 
 # STEP:2
@@ -64,7 +64,7 @@ master_data[nms]=rep_miss_dis(master_data[nms],nms)
 # Step:5
 # Get summary statistics for all the continuous variables.
 smry=master_data.describe()
-smry.to_csv("C:\\Users\\RajKalla\\prudent\\pass\\ppa\\classification\\docs\\creditcard_smry.csv")
+smry.to_csv(path)
 
 
 # STEP:5
